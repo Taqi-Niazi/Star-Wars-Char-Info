@@ -1,0 +1,56 @@
+.bod{
+    background-image: url("https://wallpaperaccess.com/full/45399.jpg");
+    background-size:cover ;
+    height: 750px;
+    width: 100%;
+}
+button{
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    transform: translate(0px, 90px);
+    cursor: pointer;
+}
+.box{
+    box-sizing: border-box;
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: gray;
+    transform: translate(0px, -250px);
+    padding-top: 10px;
+}
+img{
+    height: 500px;
+    width: 450px;
+}
+.imgs{
+    transform: translate(0px, -250px);
+}
+.inp{
+    transform: translate(0px,90px);
+    border: 2px solid black;
+}
+.heading{
+    box-sizing: border-box;
+    transform: scale(2.0);
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 150px;
+}
+.stars{
+    transform: scale(2.0);
+    font-style: italic;
+}
+.wars{
+    position: relative;
+    top: -10px;
+    transform: scale(3.0);
+    font-style: italic;
+}
