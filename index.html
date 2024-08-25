@@ -7,37 +7,76 @@
     <link rel ="stylesheet" href="project.css">
 </head>
 <body>
-    <div class="bod">
-        
-       
-        <center><div>
-            <button class="on"><b>Generate</b></button>
-            <button class="butt"><b>Search</b></button>
-            <input type="number" class="inp" min="1" max="88">
-        </div></center>
-        <div class="heading">
-            <center> <p class="stars">STAR</p><br><p class="wars">WARS</p></center>
-         </div>
-        <center><div class="box"></div></center>
-        <center class="imgs"><img src="child-looking-clipart.png" alt="" class="image"></center>
-    </div>
+        <div class="flex-body">
+            <div class="heading">
+                <center> <h1 class="stars">STAR</h1><br><h1 class="wars">WARS</h1></center>
+            </div>
+            <div class="left-box">
+                
+                <img src="child-looking-clipart.png" alt="" class="image">
+            </div>
+            <div class="character-info">
+                <div class="button-box">
+                    <button class="search"><b>Search</b></button>
+                    <input type="number" class="number-selector" min="1" max="88">
+                    <button class="generate"><b>Generate</b>
+                    </button><br>
+                    <center><div class="name-box"></div></center>
+                </div>
+                <center>  
+                <div class="info">
+                    <ul>
+                    <li >Gender : <p class="Gender"></p></li>
+                        <li >Height : <p class="Height"></p></li>
+                        <li >Mass : <p class="Mass"></p></li>
+                        <li >Homeworld : <p class="Homeworld"></p></li>
+                        <li >Born : <p class="Born"></p></li>
+                        <li >Born Location : <p class="BornLocation"></p></li>
+                        <li >Died : <p class="Died"></p></li>
+                        <li >Died Location : <p class="DiedLocation"></p></li>
+                        <li >Species :<p class="Species"></p></li>
+                        <li >Masters :<p class="Masters"></p></li>
+                    </ul>
+                </div></center>
+            </div>
+        </div>
    
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(".on").on("click",  function(){
+            $(".generate").on("click",  function(){
                 let randomNumber = Math.ceil(Math.random()*88)
                 $.get(`https://akabab.github.io/starwars-api/api/id/${randomNumber}.json` , function(data){
-                $(".box").text(data["name"])
-                $(".image").attr("src", data["image"])
+                $(".name-box").text(data["name"] || "Info not available")
+                $(".Gender").text(data["gender"] || "Info not available")
+                $(".Height").text(data["height"] || "Info not available")
+                $(".Mass").text(data["mass"] || "Info not available")
+                $(".Homeworld").text(data["homeworld"] || "Info not available")
+                $(".Born").text(data["born"] || "Info not available")
+                $(".BornLocation").text(data["bornLocation"] || "Info not available")
+                $(".Died").text(data["died"] || "Info not available")
+                $(".DiedLocation").text(data["diedLocation"] || "Info not available")
+                $(".Species").text(data["species"] || "Info not available")
+                $(".Masters").text(data["masters(index)"] || "Info not available")
+                $(".image").attr("src", data["image"] || "D:\Saqib\Programming\Udemy\JQuery\no-image-available.webp")
                 })
             })
 
-            $(".butt").on("click", function(){
-                var inpu = $(".inp").val()
-                $.get(`https://akabab.github.io/starwars-api/api/id/${inpu}.json` , function(data){
-                      $(".box").text(data["name"])
+            $(".search").on("click", function(){
+                var inpu = $(".number-selector").val()
+                $.get(`https://akabab.github.io/starwars-api/api/id/${inpu}.json` , function(data){      
+                      $(".name-box").text(data["name"] || "Info not available")
+                      $(".Gender").text(data["gender"] || "Info not available")
+                      $(".Height").text(data["height"] || "Info not available")
+                      $(".Mass").text(data["mass"] || "Info not available")
+                      $(".Homeworld").text(data["homeworld"] || "Info not available")
+                      $(".Born").text(data["born"] || "Info not available")
+                      $(".BornLocation").text(data["bornLocation"] || "Info not available")
+                      $(".Died").text(data["died"] || "Info not available")
+                      $(".DiedLocation").text(data["diedLocation"] || "Info not available")
+                      $(".Species").text(data["species"] || "Info not available")
+                      $(".Masters").text(data["masters[index]"] || "Info not available")
                       $(".image").attr("src", data["image"])
                       if(inpu >= 89){
                         alert('Not available')

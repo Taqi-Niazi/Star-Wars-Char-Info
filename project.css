@@ -1,56 +1,111 @@
-.bod{
+body{
     background-image: url("https://wallpaperaccess.com/full/45399.jpg");
     background-size:cover ;
-    height: 750px;
-    width: 100%;
+}
+.flex-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.left-box{
+    flex: 1;
+}
+.button-box{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    left: 60px;
 }
 button{
     display: inline-block;
-    height: 30px;
+    height: 100px;
     width: 100px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid silver;
+    border-radius: 50%;
     color: white;
     background-color: black;
-    transform: translate(0px, 90px);
     cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
 }
-.box{
-    box-sizing: border-box;
+.generate{
+    margin-top: 20px;
+}
+.name-box{
     height: 50px;
     width: 200px;
+    text-align: center;
     border: 2px solid black;
     border-radius: 10px;
     color: white;
     background-color: gray;
-    transform: translate(0px, -250px);
-    padding-top: 10px;
+    position: relative;
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 30px 0px 0px 35px;
 }
+
 img{
+    display: block;
     height: 500px;
     width: 450px;
 }
-.imgs{
-    transform: translate(0px, -250px);
-}
-.inp{
-    transform: translate(0px,90px);
+
+.number-selector{
     border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 2em;
+    width: 50px;
+    margin-left:30px ;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 .heading{
+    flex: 1;
     box-sizing: border-box;
     transform: scale(2.0);
     display: inline-block;
-    margin-top: 250px;
-    margin-left: 150px;
+    font-weight: bold;
+    
 }
-.stars{
-    transform: scale(2.0);
-    font-style: italic;
-}
+h1{
+    display: inline-block;
+    font-size: 60px;
+    color: white;
+    position: relative;
+}  
+ 
 .wars{
     position: relative;
-    top: -10px;
-    transform: scale(3.0);
-    font-style: italic;
+    top: -100px;
 }
+.character-info{
+    flex: 1;
+
+}
+.character-info p{
+    display: inline;
+}
+.info{
+    background-color: gray;
+    height: 390px;
+    width: 300px;
+    margin-top: 70px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.info li{
+    margin-bottom: 10px;
+}
+
+
