@@ -8,6 +8,30 @@ body{
     align-items: center;
     flex: 1;
 }
+@media only screen and (max-width : 768px){
+    body{
+        padding-bottom:100px ;
+    }
+    .flex-body{
+        flex-direction: column;
+    }
+    .flex-body > div{
+        width: 100%;
+    }
+    .heading{
+        position: relative;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        left: 110px;
+        top: 80px;
+    }
+    .info{
+        position: relative;
+        left: 25%;
+        
+    }
+}
 .left-box{
     flex: 1;
 }
