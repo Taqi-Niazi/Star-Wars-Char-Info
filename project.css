@@ -22,7 +22,6 @@ body{
     }
     .heading{
         position: relative;
-        font-size: 40px;
         font-weight: bold;
         text-align: center;
         top: 80px;
@@ -33,6 +32,10 @@ body{
     .name-box{
         position: relative;
         right: 10%;
+    }
+    .info{
+        position: relative;
+        left: 7%;
     }
 }
 .left-box{
