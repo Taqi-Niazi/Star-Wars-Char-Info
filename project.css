@@ -8,7 +8,7 @@ body{
     align-items: center;
     flex: 1;
 }
-@media (max-width : 520px){
+@media (max-width : 480px){
     body{
         padding-bottom:100px ;
         padding-top: 30px;
