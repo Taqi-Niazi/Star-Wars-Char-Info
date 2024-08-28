@@ -2,19 +2,26 @@ body{
     background-image: url("https://wallpaperaccess.com/full/45399.jpg");
     background-size:cover ;
 }
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .flex-body{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
 }
-@media only screen and (max-width : 480px){
-    body{
+@media (max-width : 768px){
+ /*   body{
         padding-bottom:100px ;
         padding-top: 30px;
-    }
+    }*/
     .flex-body{
         flex-direction: column;
+        width: 95%;
     }
     .flex-body > div{
         flex: 1 1 100%;
@@ -26,14 +33,60 @@ body{
         text-align: center;
         top: 80px;
     }
+
+    .character-info{
+    align-items: center;
+    }
     .button-box{
         margin-right: 33%;
+        align-items: center;
     }
     .name-box{
         position: relative;
         right: 10%;
     }
 }
+@media (max-width : 480px){
+    /*   body{
+           padding-bottom:100px ;
+           padding-top: 30px;
+       }*/
+       .flex-body{
+           flex-direction: column;
+           width: 95%;
+       }
+       .flex-body > div{
+           flex: 1 1 100%;
+           justify-content: center;
+       }
+       .heading{
+           position: relative;
+           font-weight: bold;
+           text-align: center;
+           top: 80px;
+       }
+   
+       .character-info{
+       align-items: center;
+       }
+       .button-box{
+           margin-right: 33%;
+           align-items: center;
+       }
+       .name-box{
+           position: relative;
+           right: 10%;
+       }
+       h1{
+        font-size: 18px;
+       }
+       .image img{
+        align-self: center;
+        align-items: center;
+        max-width: 80%;
+        height: auto;
+       }
+   }
 .left-box{
     flex: 1;
 }
