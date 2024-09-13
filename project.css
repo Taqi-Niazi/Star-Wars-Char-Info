@@ -13,80 +13,6 @@ body{
     align-items: center;
     flex: 1;
 }
-@media (max-width : 768px){
- /*   body{
-        padding-bottom:100px ;
-        padding-top: 30px;
-    }*/
-    .flex-body{
-        flex-direction: column;
-        width: 95%;
-    }
-    .flex-body > div{
-        flex: 1 1 100%;
-        justify-content: center;
-    }
-    .heading{
-        position: relative;
-        font-weight: bold;
-        text-align: center;
-        top: 80px;
-    }
-
-    .character-info{
-    align-items: center;
-    }
-    .button-box{
-        margin-right: 33%;
-        align-items: center;
-    }
-    .name-box{
-        position: relative;
-        right: 10%;
-    }
-}
-@media only screen and(max-width : 480px){
-       .body{
-           padding-bottom:100px ;
-           padding-top: 130px;
-           height: 100vh;
-        }
-       .flex-body{
-           flex-direction: column;
-           width: 95%;
-       }
-       .flex-body > div{
-           flex: 1 1 100%;
-           justify-content: center;
-       }
-       .heading{
-           position: relative;
-           font-weight: bold;
-           text-align: center;
-           top: 80px;
-       }
-   
-       .character-info{
-       align-items: center;
-       }
-       .button-box{
-           margin-right: 33%;
-           align-items: center;
-       }
-       .name-box{
-           position: relative;
-           right: 10%;
-       }
-       h1{
-        font-size: 18px;
-       }
-       .image img{
-        align-self: center;
-        align-items: center;
-        max-width: 80%;
-        height: auto;
-       }
-   }
 .left-box{
     flex: 1;
 }
@@ -186,5 +112,78 @@ h1{
 .info li{
     margin-bottom: 10px;
 }
-
+@media (max-width : 768px){
+    /*   body{
+           padding-bottom:100px ;
+           padding-top: 30px;
+       }*/
+       .flex-body{
+           flex-direction: column;
+           width: 95%;
+       }
+       .flex-body > div{
+           flex: 1 1 100%;
+           justify-content: center;
+       }
+       .heading{
+           position: relative;
+           font-weight: bold;
+           text-align: center;
+           top: 80px;
+       }
+   
+       .character-info{
+       align-items: center;
+       }
+       .button-box{
+           margin-right: 33%;
+           align-items: center;
+       }
+       .name-box{
+           position: relative;
+           right: 10%;
+       }
+   }
+@media only screen and(max-width : 480px){
+       .body{
+          padding-bottom:100px ;
+          padding-top: 130px;
+          height: 100vh;
+        }
+        .flex-body{
+          flex-direction: column;
+          width: 95%;
+        }
+        .flex-body > div{
+          flex: 1 1 100%;
+          justify-content: center;
+        }
+        .heading{
+          position: relative;
+          font-weight: bold;
+          text-align: center;
+          top: 80px;
+        }
+      
+        .character-info{
+          align-items: center;
+        }
+        .button-box{
+          margin-right: 33%;
+          align-items: center;
+        }
+        .name-box{
+          position: relative;
+          right: 10%;
+        }
+        h1{
+          font-size: 18px;
+        }
+        .image img{
+           align-self: center;
+           align-items: center;
+           max-width: 80%;
+           height: auto;
+        }
+}
 
