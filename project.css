@@ -5,7 +5,6 @@ body{
 .body{
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 .flex-body{
@@ -46,11 +45,12 @@ body{
         right: 10%;
     }
 }
-@media (max-width : 480px){
-    /*   body{
+@media only screen and(max-width : 480px){
+       .body{
            padding-bottom:100px ;
-           padding-top: 30px;
-       }*/
+           padding-top: 130px;
+           height: 100vh;
+        }
        .flex-body{
            flex-direction: column;
            width: 95%;
