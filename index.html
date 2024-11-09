@@ -52,6 +52,8 @@
         $(document).ready(function(){
             $(".generate").on("click",  function(){
                 let randomNumber = Math.ceil(Math.random()*88)
+                var inpu = $(".number-selector")
+                inpu.val(randomNumber)
                 $.get(`https://akabab.github.io/starwars-api/api/id/${randomNumber}.json` , function(data){
                 $(".name-box").text(data["name"] || "Info not available")
                 $(".Gender").text(data["gender"] || "Info not available")
